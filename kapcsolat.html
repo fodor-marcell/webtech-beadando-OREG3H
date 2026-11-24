@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kapcsolat | FitTrack</title>
+        <link rel="icon" href="images/favicon.svg">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container nav">
+                <a class="logo" href="index.html">
+                    Fit<span>Track</span>
+                </a>
+
+                <nav aria-label="Főmenü">
+                    <a href="index.html">Főoldal</a>
+                    <a href="gyakorlatok.html">Gyakorlatok</a>
+                    <a href="edzesterv.html">Edzésterv</a>
+                    <a href="kapcsolat.html">Kapcsolat</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+
+            <section class="intro">
+                <h1>Kapcsolat</h1>
+                <p>Írd meg véleményedet a FitTrack oldalról! Ez a bemutatóűrlap nem küld valódi e-mailt.</p>
+            </section>
+
+            <section class="form-panel">
+
+                <form id="contactForm" novalidate>
+
+                    <div class="field">
+                        <label for="contactName">Név *</label>
+                        <input id="contactName" type="text">
+                        <small id="contactNameError" class="error"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">E-mail cím *</label>
+                        <input id="email" type="email" placeholder="pelda@email.hu">
+                        <small id="emailError" class="error"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Üzenet *</label>
+                        <textarea id="message" rows="5" placeholder="Írd ide az üzeneted..."></textarea>
+                        <small id="messageError" class="error"></small>
+                    </div>
+
+                    <div class="field">
+                        <label class="option">
+                            <input type="checkbox" id="privacy">Elfogadom a bemutató adatkezelési feltételeket. *
+                        </label>
+                        <small id="privacyError" class="error"></small>
+                    </div>
+
+                    <button type="submit">
+                        Üzenet ellenőrzése
+                    </button>
+
+                    <button class="secondary" type="reset">
+                        Törlés
+                    </button>
+
+                </form>
+
+                <div id="contactResult" class="result" aria-live="polite"></div>
+
+            </section>
+
+            <p style="text-align: center; color: #6d796f;">A weboldal kizárólag oktatási célból készült.</p>
+        </main>
+
+        <footer>
+            <div class="container">
+                FitTrack
+                <span id="year"></span>
+            </div>
+        </footer>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

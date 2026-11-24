@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edzésterv | FitTrack</title>
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <a class="logo" href="index.html">
+                Fit<span>Track</span>
+            </a>
+            <nav aria-label="Főmenü">
+                <a href="index.html">Főoldal</a>
+                <a href="gyakorlatok.html">Gyakorlatok</a>
+                <a href="edzesterv.html">Edzésterv</a>
+                <a href="kapcsolat.html">Kapcsolat</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h1>Egyszerű edzésterv</h1>
+            <p>
+                Töltsd ki az adatokat. A kötelező mezők hibáit
+                az űrlap alatt, az adott mezőnél jelöljük.
+            </p>
+        </section>
+
+        <section class="form-panel">
+            <form id="planForm" novalidate>
+
+                <div class="field">
+                    <label for="name">Név *</label>
+
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="Teljes neved"
+                    >
+
+                    <small class="error" id="nameError"></small>
+                </div>
+
+                <div class="field">
+                    <label for="start">Kezdési dátum *</label>
+
+                    <input id="start" type="date">
+
+                    <small class="error" id="startError"></small>
+                </div>
+
+                <fieldset class="field">
+                    <legend>Heti edzésnapok száma *</legend>
+
+                    <label class="option">
+                        <input type="radio" name="days" value="2">
+                        2 nap
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="days" value="3">
+                        3 nap
+                    </label>
+
+                    <label class="option">
+                        <input type="radio" name="days" value="4">
+                        4 nap
+                    </label>
+
+                    <small class="error" id="daysError"></small>
+                </fieldset>
+
+                <div class="field">
+                    <label for="goal">Cél</label>
+
+                    <select id="goal">
+                        <option value="Izomépítés">
+                            Izomépítés
+                        </option>
+
+                        <option value="Erőfejlesztés">
+                            Erőfejlesztés
+                        </option>
+
+                        <option value="Általános fittség">
+                            Általános fittség
+                        </option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="color">Edzésterv színe</label>
+
+                    <input
+                        id="color"
+                        type="color"
+                        value="#3b8650"
+                    >
+                </div>
+
+                <div class="field">
+                    <label class="option">
+                        <input id="accept" type="checkbox">
+                        Elfogadom, hogy ez csak mintaedzésterv. *
+                    </label>
+
+                    <small class="error" id="acceptError"></small>
+                </div>
+
+                <button type="submit">
+                    Edzésterv létrehozása
+                </button>
+
+                <button class="secondary" type="reset">
+                    Alaphelyzet
+                </button>
+            </form>
+
+            <div
+                id="planResult"
+                class="result"
+                aria-live="polite"
+            ></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            FitTrack
+            <span id="year"></span>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

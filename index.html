@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Főoldal | FitTrack</title>
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .hero h1 {
+            color: #183c2b;
+        }
+
+        .tag {
+            font-weight: bold;
+            color: #2c7a43;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <a class="logo" href="index.html">
+                Fit<span>Track</span>
+            </a>
+
+            <nav aria-label="Főmenü">
+                <a href="index.html">Főoldal</a>
+                <a href="gyakorlatok.html">Gyakorlatok</a>
+                <a href="edzesterv.html">Edzésterv</a>
+                <a href="kapcsolat.html">Kapcsolat</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div>
+                <span class="tag">Egyszerű edzéstervezés</span>
+
+                <h1>Üdvözöl a FitTrack!</h1>
+
+                <p>Gyakorlatok, edzéstervek és hasznos tanácsok egy helyen.</p>
+
+                <a class="button" href="edzesterv.html">Edzésterv készítése</a>
+            </div>
+
+            <img src="images/hero-training.svg" alt="Sportoló edzés közben">
+        </section>
+
+        <section class="section">
+            <h2>Mit találsz az oldalon?</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Gyakorlatok</h3>
+
+                    <p>Hat alapvető gyakorlat képpel és rövid leírással.</p>
+
+                    <a href="gyakorlatok.html">Megnézem</a>
+                </div>
+
+                <div class="card">
+                    <h3>Edzésterv</h3>
+
+                    <p>Egyszerű űrlap, amely heti edzésjavaslatot készít.</p>
+
+                    <a href="edzesterv.html">Terv készítése</a>
+                </div>
+
+                <div class="card">
+                    <h3>Kapcsolat</h3>
+
+                    <p>Kapcsolatfelvételi űrlap ellenőrzéssel.</p>
+
+                    <a href="kapcsolat.html">Üzenet írása</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Három lépés a kezdéshez</h2>
+
+            <ol>
+                <li>Ismerd meg az alapgyakorlatokat.</li>
+                <li>Állítsd össze a heti edzéstervedet.</li>
+                <li>Végezd el az edzéseket és figyeld a fejlődésed.</li>
+            </ol>
+
+            <h3>Hasznos tanácsok</h3>
+
+            <ul>
+                <li>Melegíts be minden edzés előtt.</li>
+                <li>Fokozatosan növeld a terhelést.</li>
+                <li>Hagyj időt a regenerációra.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Gyakori kérdések</h2>
+
+            <button class="question" type="button">
+                Működik internet nélkül is?
+                <span>+</span>
+            </button>
+
+            <div class="answer">
+                <p>Igen, a jQuery könyvtárat is helyben tároljuk, az oldal nem igényel szervert.</p>
+            </div>
+
+            <button class="question" type="button">
+                Elküldi az űrlap adataimat?
+                <span>+</span>
+            </button>
+
+            <div class="answer">
+                <p>Nem, a bemutató csak a böngészőben dolgozza fel az adatokat.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            FitTrack
+            <span id="year"></span>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

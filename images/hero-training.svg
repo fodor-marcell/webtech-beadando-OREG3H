@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="650" viewBox="0 0 720 650" role="img" aria-label="Sportoló és súlyzó stilizált grafikája">
+<defs><linearGradient id="orb" x1=".1" y1="0" x2=".85" y2="1"><stop stop-color="#e9ffba"/><stop offset="1" stop-color="#9bc56f"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="22"/></filter></defs>
+<circle cx="368" cy="302" r="255" fill="url(#orb)"/><circle cx="368" cy="302" r="209" stroke="#f7ffe9" stroke-width="2" opacity=".3" fill="none"/><circle cx="368" cy="302" r="163" stroke="#efffcf" stroke-width="2" opacity=".22" fill="none"/><path d="M124 484C250 435 505 458 631 505L631 567H124Z" fill="#5c965b" opacity=".28"/>
+<ellipse cx="379" cy="533" rx="178" ry="25" fill="#173b2a" opacity=".32" filter="url(#shadow)"/>
+<g stroke-linecap="round" stroke-linejoin="round">
+<path d="M230 194H531" stroke="#143529" stroke-width="15"/><path d="M264 156V232M285 160V229M475 160V229M495 156V232" stroke="#143529" stroke-width="19"/>
+<circle cx="374" cy="179" r="43" fill="#dfa784"/><path d="M344 173Q355 112 394 144Q415 156 409 178" fill="#1b3328"/>
+<path d="M330 218L290 370L438 370L414 214Q373 232 330 218" fill="#234b37"/>
+<path d="M327 245L284 224L278 191M415 244L469 229L472 192" stroke="#e6b38c" stroke-width="30" fill="none"/>
+<path d="M317 371L292 488L281 527M400 371L446 481L455 527" stroke="#193e2c" stroke-width="42" fill="none"/>
+<path d="M259 532H312M431 532H483" stroke="#102c22" stroke-width="22"/>
+<path d="M330 276L395 276" stroke="#c8ea95" stroke-width="8" opacity=".45"/>
+</g><g fill="#1e4932" opacity=".75"><circle cx="119" cy="141" r="11"/><circle cx="600" cy="320" r="7"/><path d="M562 96l13 25-27-4z"/></g>
+</svg>

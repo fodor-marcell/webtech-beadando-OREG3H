@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gyakorlatok | FitTrack</title>
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <a class="logo" href="index.html">
+                Fit<span>Track</span>
+            </a>
+
+            <nav aria-label="Főmenü">
+                <a href="index.html">Főoldal</a>
+                <a href="gyakorlatok.html">Gyakorlatok</a>
+                <a href="edzesterv.html">Edzésterv</a>
+                <a href="kapcsolat.html">Kapcsolat</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h1>Gyakorlatok</h1>
+            <p>Keress név szerint, vagy szűrj izomcsoportra.</p>
+        </section>
+
+        <div class="toolbar">
+            <label for="search">Keresés:</label>
+            <input
+                id="search"
+                type="text"
+                placeholder="Például: plank"
+            >
+
+            <label for="muscle">Izomcsoport:</label>
+            <select id="muscle">
+                <option value="all">Összes</option>
+                <option value="mell">Mell</option>
+                <option value="hat">Hát</option>
+                <option value="lab">Láb</option>
+                <option value="vall">Váll</option>
+                <option value="has">Has</option>
+            </select>
+        </div>
+
+        <p id="count">6 gyakorlat</p>
+
+        <div class="cards" id="exerciseList">
+
+            <article
+                class="card exercise"
+                data-name="fekvenyomás"
+                data-muscle="mell"
+            >
+                <img src="images/bench-press.svg" alt="Fekvenyomás">
+
+                <h3>Fekvenyomás</h3>
+                <p>Izomcsoport: Mell</p>
+
+                <button class="details" type="button">
+                    Tipp megjelenítése
+                </button>
+
+                <p class="tip">
+                    Ügyelj a szabályos kivitelezésre és a kontrollált mozdulatokra.
+                </p>
+            </article>
+
+            <article
+                class="card exercise"
+                data-name="húzódzkodás"
+                data-muscle="hat"
+            >
+                <img src="images/pull-up.svg" alt="Húzódzkodás">
+
+                <h3>Húzódzkodás</h3>
+                <p>Izomcsoport: Hát</p>
+
+                <button class="details" type="button">
+                    Tipp megjelenítése
+                </button>
+
+                <p class="tip">
+                    Ügyelj a szabályos kivitelezésre és a kontrollált mozdulatokra.
+                </p>
+            </article>
+
+            <article
+                class="card exercise"
+                data-name="guggolás"
+                data-muscle="lab"
+            >
+                <img src="images/squat.svg" alt="Guggolás">
+
+                <h3>Guggolás</h3>
+                <p>Izomcsoport: Láb</p>
+
+                <button class="details" type="button">
+                    Tipp megjelenítése
+                </button>
+
+                <p class="tip">
+                    Ügyelj a szabályos kivitelezésre és a kontrollált mozdulatokra.
+                </p>
+            </article>
+
+            <article
+                class="card exercise"
+                data-name="vállból nyomás"
+                data-muscle="vall"
+            >
+                <img src="images/shoulder-press.svg" alt="Vállból nyomás">
+
+                <h3>Vállból nyomás</h3>
+                <p>Izomcsoport: Váll</p>
+
+                <button class="details" type="button">
+                    Tipp megjelenítése
+                </button>
+
+                <p class="tip">
+                    Ügyelj a szabályos kivitelezésre és a kontrollált mozdulatokra.
+                </p>
+            </article>
+
+            <article
+                class="card exercise"
+                data-name="evezés"
+                data-muscle="hat"
+            >
+                <img src="images/row.svg" alt="Evezés">
+
+                <h3>Evezés</h3>
+                <p>Izomcsoport: Hát</p>
+
+                <button class="details" type="button">
+                    Tipp megjelenítése
+                </button>
+
+                <p class="tip">
+                    Ügyelj a szabályos kivitelezésre és a kontrollált mozdulatokra.
+                </p>
+            </article>
+
+            <article
+                class="card exercise"
+                data-name="plank"
+                data-muscle="has"
+            >
+                <img src="images/plank.svg" alt="Plank">
+
+                <h3>Plank</h3>
+                <p>Izomcsoport: Has</p>
+
+                <button class="details" type="button">
+                    Tipp megjelenítése
+                </button>
+
+                <p class="tip">
+                    Ügyelj a szabályos kivitelezésre és a kontrollált mozdulatokra.
+                </p>
+            </article>
+
+        </div>
+
+        <p id="noResults" hidden>Nincs találat.</p>
+
+        <section class="section">
+            <h2>Gyakorlatok táblázata</h2>
+
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gyakorlat</th>
+                            <th>Izomcsoport</th>
+                            <th>Eszköz</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Fekvenyomás</td>
+                            <td>Mell</td>
+                            <td>Rúd vagy kézisúlyzó</td>
+                        </tr>
+
+                        <tr>
+                            <td>Húzódzkodás</td>
+                            <td>Hát</td>
+                            <td>Húzódzkodó rúd</td>
+                        </tr>
+
+                        <tr>
+                            <td>Guggolás</td>
+                            <td>Láb</td>
+                            <td>Testsúly vagy súlyzó</td>
+                        </tr>
+
+                        <tr>
+                            <td>Vállból nyomás</td>
+                            <td>Váll</td>
+                            <td>Kézisúlyzó</td>
+                        </tr>
+
+                        <tr>
+                            <td>Evezés</td>
+                            <td>Hát</td>
+                            <td>Kézisúlyzó</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plank</td>
+                            <td>Has</td>
+                            <td>Matrac</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            FitTrack
+            <span id="year"></span>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
